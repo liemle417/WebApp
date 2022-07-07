@@ -72,6 +72,8 @@ header object{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin: 10px;
+  padding: 10px;
 }
 
 .line_bar_chart_title{
@@ -81,4 +83,7 @@ header object{
 .line_bar_chart_events{
   display: flex;
   justify-content: space-evenly;
+  margin: 10px;
+  padding: 10px;
 }
+
