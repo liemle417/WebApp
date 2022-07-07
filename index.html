@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+        <title>WebApp Dashboard</title>
+    </head>
+    <body>
+        <header>
+            <h1>WebApp&#8482</h1>
+            <div>
+                <object data="svgs/bell.svg" width="25" height="25" aria-label="Bell-icon" aria-describedby="bell icon">
+                    <title>Bell Icon</title>
+                </object>
+            </div>
+
+            <div class="divider">
+                <p></p>
+            </div>
+
+            <div>
+                <img src="images/member-1.jpg" />
+            </div>
+            <h3>Student Name</h3>
+        </header>
+
+        <nav class="main-nav">
+            <div>
+                <object data="svgs/home.svg" width="25" height="25" aria-label="home-icon" aria-describedby="home icon">
+                    <title>Home Icon</title>
+                </object>
+            </div>
+            
+            <div>
+                <object data="svgs/bar-chart.svg" width="25" height="25" aria-label="bar-chart" aria-describedby="bart chart">
+                    <title>Bart Chart</title>
+                </object>
+            </div>
+
+            <div>
+                <object data="svgs/members.svg" width="25" height="25" aria-label="members-icon" aria-describedby="members icon">
+                    <title>Members</title>
+                </object>
+            </div>
+
+            <div>
+                <object data="svgs/settings.svg" width="25" height="25" aria-label="settings-icon" aria-describedby="settings icon">
+                    <title>Settings</title>
+                </object>
+            </div>
+        </nav>
+
+        <main>
+            <div class="dashboard-search-component">
+                <h2>Dashboard</h2>
+                <label for="search_bar"><input type="text" id="search_bar">Search</label>
+            </div>
+
+            <div class="message-notification">
+                <p class="message">Alert: You have unread message</p>
+                <div class="closed">x</div>
+            </div>
+
+            <div class="line_bar_chart">
+                <h2 class="line_bar_chart_title">TRAFFIC</h2>
+                <div class="line_bar_chart_events">
+                    <p>Hourly</p>
+                    <p>Daily</p>
+                    <p>Weekly</p>
+                    <p>Monthly</p>
+                </div>
+                <canvas id="myChart" width="400" height="400"></canvas>
+
+            </div>
+
+        </main>
+        <script src="js/chart.min.js"></script>
+    </body>
+</html>
