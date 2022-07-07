@@ -7,8 +7,9 @@ let new_traffic_chart = new Chart(trafficChart, {
         datasets: [{
             data: [0, 750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500],
 
-            backgroundColor: 'rgb(45, 47, 75, 0.2)',
+            backgroundColor: 'rgba(133, 72, 245, 0.268)',
             fill: true,
+ 
             borderColor: 'rgb(92, 27, 152)',
             borderWidth: 2,
             pointRadius: 5,
