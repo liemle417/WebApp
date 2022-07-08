@@ -68,7 +68,7 @@ header object{
   border-radius: 5px;
 }
 
-.line_bar_chart{
+.line_chart{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -76,11 +76,11 @@ header object{
   padding: 10px;
 }
 
-.line_bar_chart_title{
+.line_chart_title{
   font-size: 20px;
 }
 
-.line_bar_chart_events{
+.line_chart_events{
   display: flex;
   justify-content: space-evenly;
   margin: 10px;
