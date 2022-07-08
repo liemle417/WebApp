@@ -25,3 +25,36 @@ let new_traffic_chart = new Chart(trafficChart, {
         }
     }
 });
+
+
+let dailyTrafficChart = document.getElementById('dailyTrafficChart').getContext('2d');
+
+dailyTrafficChart.canvas.parentNode.style.height = '250px'; //To Use this, must set maintainAspectRatio to false
+dailyTrafficChart.canvas.parentNode.style.width = '450px'; //To Use this, must set maintainAspectRatio to false
+
+let new_dailyTrafficChart = new Chart(dailyTrafficChart, {
+    type: 'bar',
+    data: {
+        labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+        datasets: [{
+            data: [75, 110, 155, 125, 225, 200, 100],
+
+            backgroundColor: 'rgb(133, 72, 245)',
+            fill: true,
+ 
+            borderColor: 'rgb(92, 27, 152)',
+            barThickness: 35,
+            borderWidth: 1,
+        }],
+    },
+
+    options: {
+        plugins:{
+            legend:{
+                display: false
+            }
+        },
+
+        maintainAspectRatio: false
+    }
+});

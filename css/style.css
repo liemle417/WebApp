@@ -76,13 +76,17 @@ header object{
   padding: 10px;
 }
 
-.line_chart_title{
-  font-size: 20px;
-}
-
 .line_chart_events{
   display: flex;
   justify-content: space-evenly;
+  margin: 10px;
+  padding: 10px;
+}
+
+.bar_chart{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 10px;
   padding: 10px;
 }
