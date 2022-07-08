@@ -29,8 +29,8 @@ let new_traffic_chart = new Chart(trafficChart, {
 
 let dailyTrafficChart = document.getElementById('dailyTrafficChart').getContext('2d');
 
-dailyTrafficChart.canvas.parentNode.style.height = '250px'; //To Use this, must set maintainAspectRatio to false
-dailyTrafficChart.canvas.parentNode.style.width = '450px'; //To Use this, must set maintainAspectRatio to false
+// dailyTrafficChart.canvas.parentNode.style.height = '250px'; //To Use this, must set maintainAspectRatio to false
+// dailyTrafficChart.canvas.parentNode.style.width = '450px'; //To Use this, must set maintainAspectRatio to false
 
 let new_dailyTrafficChart = new Chart(dailyTrafficChart, {
     type: 'bar',
@@ -43,7 +43,6 @@ let new_dailyTrafficChart = new Chart(dailyTrafficChart, {
             fill: true,
  
             borderColor: 'rgb(92, 27, 152)',
-            barThickness: 35,
             borderWidth: 1,
         }],
     },
@@ -55,6 +54,6 @@ let new_dailyTrafficChart = new Chart(dailyTrafficChart, {
             }
         },
 
-        maintainAspectRatio: false
+        //maintainAspectRatio: false
     }
 });
