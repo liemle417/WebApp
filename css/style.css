@@ -96,16 +96,42 @@ header object{
   flex-direction: column;
 }
 
-.facebookSection{
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  border: 1px solid black;
+.iconSection{
+  display: flex;  
+  border: 1px solid lightgray;
   border-radius: 5px;
-  width: 400px;
-  background-color: #7477bf;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fafafa;
+  width: 280px;
 }
 
-.facebook-icon{
-  width: 300px;
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  background-color: #7477bf;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.svg-icon{
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+}
+
+.iconSectionDetails h2{
+  margin-left: 1.2rem;
+  font-weight: bold;
+  color: hsl(238, 47%, 54%);
+}
+
+.iconSectionDetails p{
+  margin-left: 1.1rem;
+  font-size: 40px;
+  font-weight: lighter;
+  color: gray;
 }
