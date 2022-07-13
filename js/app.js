@@ -57,3 +57,26 @@ let new_dailyTrafficChart = new Chart(dailyTrafficChart, {
         //maintainAspectRatio: false
     }
 });
+
+
+
+let mobileUsersPie = document.getElementById('mobileUsersPie').getContext('2d');
+
+let new_mobile_users_pie = new Chart(mobileUsersPie, {
+    type: 'doughnut',
+    data: {
+        labels: ["Desktop", "Tablets", "Phone"],
+        datasets: [{
+            data: [65, 15, 25],
+            backgroundColor: ["#7477bf", "#2ecc71", "#008080"],
+        }],
+    },
+
+    options: {
+        plugins:{
+            legend:{
+                position: 'right',
+            }            
+        }
+    }
+});
