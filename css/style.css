@@ -4,7 +4,7 @@
 }
 
 body{
-  width: 100vw;
+  width: 100%;
   height: 100vh;  
   box-sizing: border-box;
 }
@@ -37,7 +37,7 @@ header object{
 .main-nav{
   display: flex;
   justify-content: center;
-  border: 1px solid black
+  border: 2px solid black
 }
 
 .main-nav div{
@@ -50,45 +50,52 @@ header object{
   height: 35px;
 }
 
-.dashboard-search-component{
+/*DISPLAY FLEX &
+MARGIN, PADDING 10px*/
+
+.dashboard-search-component,
+.message-notification,
+.line_chart,
+.line_chart_events,
+.bar_chart,
+.social_stats,
+.iconSection,
+.message_user,
+.mobile_users_pie h2,
+.member-section h2,
+.members,
+.members-activity{
   display: flex;
-  justify-content: space-between;
   margin: 10px;
-  padding: 10px;  
+  padding: 10px; 
+}
+
+.dashboard-search-component{
+  justify-content: space-between;
 }
 
 .message-notification{
-  display: flex;
   justify-content: space-around;
   align-items: center;
 
   margin: 0 60px;
   padding: 15px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 5px;
 }
 
 .line_chart{
-  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 10px;
-  padding: 10px;
 }
 
 .line_chart_events{
-  display: flex;
   justify-content: space-evenly;
-  margin: 10px;
-  padding: 10px;
 }
 
 .bar_chart{
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 10px;
-  padding: 10px;
 }
 
 .social_stats{
@@ -97,13 +104,11 @@ header object{
 }
 
 .iconSection{
-  display: flex;  
-  border: 1px solid lightgray;
+  border: 2px solid lightgray;
   border-radius: 5px;
-  margin: 10px;
-  padding: 10px;
   background-color: #fafafa;
-  width: 280px;
+  width: 100%;
+  margin-left: 0;
 }
 
 .icon{
@@ -126,7 +131,7 @@ header object{
 .iconSectionDetails h2{
   margin-left: 1.2rem;
   font-weight: bold;
-  color: hsl(238, 47%, 54%);
+  color: #7477bf;
 }
 
 .iconSectionDetails p{
@@ -136,43 +141,67 @@ header object{
   color: gray;
 }
 
+/*-----------MEMBERS-------------*/
+.member-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.members,
+.members-activity{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-members{
+  width: 70px;
+  border-radius: 50%;
+}
+
+.members p:nth-of-type(2){
+  color: #7477bf;
+}
+
+.recent-activity-section {
+  margin-top: 20px;
+}
+
 /*-----------MESSAGE-------------*/
 .message_user{
-  display: flex;
-  width: 100%;
   flex-direction: column;
   justify-content: center;
-  margin: 20px 0;
 }
 
 input[id='userSearch']{
+  width: 100%;
+  height: 60px;
   background-color: rgb(195, 194, 194);
   border-radius: 5px;
   border: 2px solid gray;
   outline: none;
-  width: 100%;
-  height: 60px;
 }
 
 textarea[class="message_for_users"]{
+  width: 100%;
+  height: 100px;
   background-color: rgb(195, 194, 194);
   border-radius: 5px;
   border: 2px solid gray;
   outline: none;
-  height: 100px;
-  width: 100%;
-  margin: 20px 0;
+  margin-top: 20px;  
 }
 
 form button{
   width: 100%;
   height: 60px;
-  padding: 10px;
-  background: rgb(133, 72, 245);
+  background: #7477bf;
   color: #fff;
   font-size: 15px;
+  border: 2px solid gray;
   border-radius: 5px;  
   outline: none;
+  margin-top: 20px;  
 }
 
 /*------------SETTING-------------*/
@@ -181,11 +210,11 @@ form button{
   justify-content: space-between;
   margin: 40px 0;
   align-items: center;
-
 }
 
 .settings-section p{
-  margin-right: 100px;
+  margin: 10px 100px 10px 10px;
+  padding-left: 10px;
 }
 
 .toggle-btn{
@@ -228,7 +257,7 @@ form button{
 }
 
 .toggle-btn input:checked + label{
-  background: rgb(133, 72, 245);
+  background: #7477bf;
 }
 
 .toggle-btn input:checked + label:before{
@@ -241,4 +270,39 @@ form button{
 
 .toggle-btn input{
   display: none;
+}
+
+.timezones{
+  width: calc(100% - 40px);
+  height: 60px;
+  margin-left: 20px;
+  padding: 10px;
+  background-color: rgb(195, 194, 194);
+  border-radius: 5px;
+  outline: none;
+}
+
+.bottomBtn{
+  display: flex;
+  justify-content: space-around;
+}
+
+.save,
+.cancel{
+  width: 50%;
+  height: 60px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid gray;
+  color: #fff;
+}
+
+.save{
+  background-color: #7477bf;
+}
+
+.cancel{
+  background-color: gray;
 }
