@@ -45,10 +45,10 @@ let new_dailyTrafficChart = new Chart(dailyTrafficChart, {
         datasets: [{
             data: [75, 110, 155, 125, 225, 200, 100],
 
-            backgroundColor: 'rgb(133, 72, 245)',
+            backgroundColor: '#7477bf',
             fill: true,
  
-            borderColor: 'rgb(92, 27, 152)',
+            borderColor: '#7477bf',
             borderWidth: 1,
         }],
     },

@@ -4,9 +4,10 @@
 }
 
 body{
-  width: 100%;
+  width: 100vw;
   height: 100vh;  
   box-sizing: border-box;
+  font-family: 'Open Sans';
 }
 
 header{
@@ -20,13 +21,18 @@ header{
 }
 
 header h1{
-  font-size: 25px;
+  font-size: 20px;
   margin-right: 5px;
+  font-weight: 100;
+}
+
+header h1 span{
+  font-weight: 900;
 }
 
 header .divider{
   border-left: 1px solid #fff;
-  height: 40px;
+  height: 35px;
   margin: 0 5px;
 }
 
@@ -34,12 +40,12 @@ header .divider{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 12px; 
+  font-size: 15px; 
 }
 
 .top-icon img{
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   margin-right: 15px;
 }
@@ -84,23 +90,32 @@ MARGIN, PADDING 10px*/
   padding: 10px; 
 }
 
+.dashboard-search-component h2,
+.line_chart_title,
+.bar_chart_title,
+.mobile_users_pie_title,
+.mobile_users_social_stats_title,
+.member-section h2{
+  font-size: 15px;
+}
+
 .dashboard-search-component{
   display: flex;
-  width: calc(100vw - 40px);
+  width: calc(100vw - 25px);
   justify-content: space-between;
   align-items: center;
   align-self: center;
-  margin: 0 10px;
-  padding: 15px;
+  margin: 0 5px;
+  padding: 10px;
   position: relative;
-  font-size: 13px;
 }
 
 .wrap-search-bar{
   display: flex;
   align-items: center;
-  border-radius: 0 0 0 5px;
-  height: 50px;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+  height: 40px;
   background-color: #c1c4f0;
   outline: none;
   position: absolute;
@@ -119,10 +134,10 @@ MARGIN, PADDING 10px*/
 
 .message-notification{
   display: flex;
-  width: calc(100vw - 40px);
+  width: calc(100vw - 45px);
   justify-content: space-around;
   align-items: center;
-  margin: 10px;
+  margin: 15px;
   padding: 10px;
   background-color: #7477bf;
   color: #fff;
@@ -141,21 +156,27 @@ MARGIN, PADDING 10px*/
   align-items: center;
 }
 
+.line_chart_events p{
+  font-weight: bold;
+}
+
 .active-green{
   display: inline-block;
   background-color: #2ECC71;
   color: #fff;
   text-align: center;
-  width: 50px;
+  width: 60px;
   padding: 5px;
   border-radius: 20px;
 }
 
-
-
 .bar_chart{
   flex-direction: column;
   justify-content: space-between;
+}
+
+.bar_chart h2{
+  margin-bottom: 10px;
 }
 
 .mobile_users_pie h2{
@@ -165,7 +186,7 @@ MARGIN, PADDING 10px*/
 
 .mobile_users_pie{
   width: 300px;
-  margin: 0 10px;
+  margin: 0 10px -20px 10px ;
   padding: 0 10px;
 }
 
@@ -381,3 +402,7 @@ form button{
 .cancel{
   background-color: gray;
 }
+
+/* @media screen {
+  
+} */
