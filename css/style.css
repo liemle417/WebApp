@@ -415,13 +415,40 @@ form button{
     display: flex;
     flex-direction: column;
   }
+
+  header{
+    justify-content: space-between;
+  }
+
+  header h1{
+    margin-left: 15px;
+  }
+
+  .wrap-top-nav{
+    justify-content: flex-end;
+    margin: 15px;
+  }
   .main-nav{
     flex-direction: column;
     width: 80px;
     height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .main-div{
     display: flex;
+  }
+
+  .wrap-search-bar{
+    width: calc(100vw - 150px);
+  }
+  
+  .wrap-search-bar input{
+    width: calc(100vw - 260px);
+  }
+
+  .message-notification{
+    width: 100%;
   }
 }
