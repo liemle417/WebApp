@@ -25,7 +25,7 @@ header h1{
 }
 
 header .divider{
-  border-left: 1px solid black;
+  border-left: 1px solid #fff;
   height: 40px;
   margin: 0 5px;
 }
@@ -47,6 +47,7 @@ header .divider{
 svg[aria-label="Bell-icon"]{
   width: 25px;
   height: 25px;
+  fill: #fff;
 }
 
 .main-nav{
@@ -69,9 +70,6 @@ svg[aria-label="Bell-icon"]{
 
 /*DISPLAY FLEX &
 MARGIN, PADDING 10px*/
-
-.dashboard-search-component,
-.message-notification,
 .line_chart,
 .line_chart_events,
 .bar_chart,
@@ -87,15 +85,37 @@ MARGIN, PADDING 10px*/
 }
 
 .dashboard-search-component{
+  display: flex;
+  width: 280px;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.dashboard-search-component h2{
+  margin-right: 10px;
+}
+
+.wrap-search-bar{
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 0 5px;
+  height: 40px;
+  background-color: #7477bf;
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: calc(320px - 57.6%);
 }
 
 .message-notification{
-  width: 320px;
+  display: flex;
+  width: 280px;
   justify-content: space-around;
   align-items: center;
+  margin: 10px;
   padding: 10px;
-  border: 1px solid #7477bf;
   background-color: #7477bf;
   color: #fff;
   border-radius: 5px;
