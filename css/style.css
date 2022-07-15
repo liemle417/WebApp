@@ -86,32 +86,40 @@ MARGIN, PADDING 10px*/
 
 .dashboard-search-component{
   display: flex;
-  width: 280px;
+  width: calc(100vw - 40px);
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  align-self: center;
+  margin: 0 10px;
+  padding: 15px;
   position: relative;
-}
-
-.dashboard-search-component h2{
-  margin-right: 10px;
+  font-size: 13px;
 }
 
 .wrap-search-bar{
   display: flex;
   align-items: center;
   border-radius: 0 0 0 5px;
-  height: 40px;
-  background-color: #7477bf;
+  height: 50px;
+  background-color: #c1c4f0;
   outline: none;
   position: absolute;
   top: 0;
-  left: calc(320px - 57.6%);
+  right: 0;
+}
+
+.wrap-search-bar input{
+  border: none;
+  outline: none;
+  margin:  0 10px;
+  padding: 5px;
+  font-size: 13px;
+  border-radius: 5px;
 }
 
 .message-notification{
   display: flex;
-  width: 280px;
+  width: 285px;
   justify-content: space-around;
   align-items: center;
   margin: 10px;
