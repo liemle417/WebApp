@@ -61,7 +61,6 @@ MARGIN, PADDING 10px*/
 .social_stats,
 .iconSection,
 .message_user,
-.mobile_users_pie h2,
 .member-section h2,
 .members,
 .members-activity{
@@ -75,12 +74,13 @@ MARGIN, PADDING 10px*/
 }
 
 .message-notification{
+  width: 320px;
   justify-content: space-around;
   align-items: center;
-
-  margin: 0 60px;
-  padding: 15px;
-  border: 2px solid black;
+  padding: 10px;
+  border: 1px solid #7477bf;
+  background-color: #7477bf;
+  color: #fff;
   border-radius: 5px;
 }
 
@@ -96,6 +96,17 @@ MARGIN, PADDING 10px*/
 .bar_chart{
   flex-direction: column;
   justify-content: space-between;
+}
+
+.mobile_users_pie h2{
+  margin-top: 20px;
+  margin-bottom: -30px;
+}
+
+.mobile_users_pie{
+  width: 300px;
+  margin: 0 10px;
+  padding: 0 10px;
 }
 
 .social_stats{

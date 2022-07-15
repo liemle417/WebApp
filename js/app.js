@@ -65,7 +65,6 @@ let mobileUsersPie = document.getElementById('mobileUsersPie').getContext('2d');
 let new_mobile_users_pie = new Chart(mobileUsersPie, {
     type: 'doughnut',
     data: {
-        maintainAspectRatio: false,
         labels: ["Desktop", "Tablets", "Phone"],
         datasets: [{
             data: [65, 15, 25],
@@ -78,7 +77,6 @@ let new_mobile_users_pie = new Chart(mobileUsersPie, {
             legend:{
                 position: 'right',
             }            
-        },
-        radius: 100, 
+        }
     }
 });
