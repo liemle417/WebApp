@@ -20,6 +20,11 @@ header{
   color: #fff;
 }
 
+.wrap-top-nav{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 header h1{
   font-size: 20px;
   margin-right: 5px;
@@ -31,9 +36,9 @@ header h1 span{
 }
 
 header .divider{
-  border-left: 1px solid #fff;
+  border-left: 1px solid #aaa;
   height: 35px;
-  margin: 0 5px;
+  margin: 0 15px;
 }
 
 .top-icon{
@@ -44,16 +49,18 @@ header .divider{
 }
 
 .top-icon img{
-  width: 30px;
-  height: 30px;
+  align-items: center;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 svg[aria-label="Bell-icon"]{
   width: 25px;
   height: 25px;
   fill: #fff;
+  margin-top: 5px;
 }
 
 .main-nav{
@@ -404,10 +411,17 @@ form button{
 }
 
 @media (min-width: 768px){
-  .main-nav{
+  body{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+  }
+  .main-nav{
+    flex-direction: column;
     width: 80px;
-  }  
+    height: 100vh;
+  }
+
+  .main-div{
+    display: flex;
+  }
 }
