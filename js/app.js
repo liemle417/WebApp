@@ -5,15 +5,15 @@ let new_traffic_chart = new Chart(trafficChart, {
     data: {
         labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
         datasets: [{
-            data: [0, 750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500],
+            data: [550, 750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500],
 
-            backgroundColor: 'rgba(133, 72, 245, 0.268)',
+            backgroundColor: 'rgba(204, 204, 252, 0.5)',
             fill: true,
  
-            borderColor: 'rgb(92, 27, 152)',
-            borderWidth: 2,
+            // borderColor: 'rgb(255,165,0, .1)',
+            borderWidth: 1,
             pointRadius: 5,
-            pointBackgroundColor: 'white',
+            pointBackgroundColor: 'rgba(204, 204, 252, 0.5)',
         }],
     },
 
@@ -22,7 +22,13 @@ let new_traffic_chart = new Chart(trafficChart, {
             legend:{
                 display: false
             }
-        }
+        },
+
+        scales: {
+            y: {
+                beginAtZero:true
+              }
+          }
     }
 });
 
@@ -67,8 +73,8 @@ let new_mobile_users_pie = new Chart(mobileUsersPie, {
     data: {
         labels: ["Desktop", "Tablets", "Phone"],
         datasets: [{
-            data: [65, 15, 25],
-            backgroundColor: ["#7477bf", "#2ecc71", "#008080"],
+            data: [65, 17.5, 17.5],
+            backgroundColor: ["#7477bf", "#55ad84", "#63c7db"],
         }],
     },
 
