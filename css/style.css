@@ -403,6 +403,11 @@ form button{
   background-color: gray;
 }
 
-/* @media screen {
-  
-} */
+@media (min-width: 768px){
+  .main-nav{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80px;
+  }  
+}
