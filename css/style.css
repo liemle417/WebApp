@@ -146,13 +146,14 @@ MARGIN, PADDING 10px*/
   border-radius: 5px;
 }
 
-
 .line_chart{
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 .line_chart_events{
+  display: flex;
   justify-content: space-between;
   padding: 5px;
   align-items: center;
@@ -446,6 +447,268 @@ form button{
   }
 
   .message-notification{
-    width: 100%;
+    width: calc(100vw - 130px);
+    justify-content: space-between;
   }
+
+  .line_chart{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .line_chart_events{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    align-self: center;
+  }
+  
+  .line_chart_events p{
+    font-weight: bold;
+  }
+
+.active-green{
+  display: inline-block;
+  background-color: #2ECC71;
+  color: #fff;
+  text-align: center;
+  width: 60px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.bar_chart{
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bar_chart h2{
+  margin-bottom: 10px;
+}
+
+.mobile_users_pie h2{
+  margin-top: 20px;
+  margin-bottom: -30px;
+}
+
+.mobile_users_pie{
+  width: 300px;
+  margin: 0 10px -20px 10px ;
+  padding: 0 10px;
+}
+
+.social_stats{
+  display: flex;
+  flex-direction: column;
+}
+
+.iconSection{
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  background-color: #fafafa;
+  width: calc(100vw - 60px);
+  margin-left: 0;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 75px;
+  height: 75px;
+  background-color: #7477bf;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.svg-icon{
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+}
+
+.iconSectionDetails h2{
+  margin-left: 1.2rem;
+  font-weight: bold;
+  color: #7477bf;
+}
+
+.iconSectionDetails p{
+  margin-left: 1.1rem;
+  font-size: 40px;
+  font-weight: lighter;
+  color: gray;
+}
+
+/*-----------MEMBERS-------------*/
+.member-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.members,
+.members-activity{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-members{
+  width: 70px;
+  border-radius: 50%;
+}
+
+.members p:nth-of-type(2){
+  color: #7477bf;
+}
+
+.recent-activity-section {
+  margin-top: 20px;
+}
+
+/*-----------MESSAGE-------------*/
+.message_user{
+  flex-direction: column;
+  justify-content: center;
+}
+
+input[id='userSearch']{
+  width: calc(100vw - 60px);
+  height: 60px;
+  background-color: rgb(195, 194, 194);
+  border-radius: 5px;
+  border: 2px solid gray;
+  outline: none;
+  padding: 10px;
+}
+
+textarea[class="message_for_users"]{
+  width: calc(100vw - 60px);
+  height: 100px;
+  background-color: rgb(195, 194, 194);
+  font-family: monospace;
+  border-radius: 5px;
+  border: 2px solid gray;
+  outline: none;
+  margin-top: 20px;  
+  padding: 10px;
+}
+
+form button{
+  width: calc(100vw - 35px);
+  height: 60px;
+  background-color: #7477bf;
+  border: 2px solid gray;
+  border-radius: 5px; 
+  color: #fff;
+  font-size: 15px;
+  
+  outline: none;
+  margin-top: 20px; 
+}
+
+/*------------SETTING-------------*/
+.settings-section{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  align-items: center;
+}
+
+.settings-section p{
+  margin: 10px 100px 10px 10px;
+  padding-left: 10px;
+}
+
+.toggle-btn{
+  position: absolute;
+  left: 220px;
+}
+
+.toggle-btn label{
+  position: relative;
+  display: block;
+  width: 75px;
+  height: 31.5px;
+  background: #fff;
+  border: 3px solid #aaa;
+  border-radius: 30px;
+  transition: all 300ms linear;
+}
+
+.toggle-btn label:before{
+  position: relative;
+  content:'';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 3px solid #aaa;
+  border-radius: 50%;
+  top: 3px;
+  left: 2px;
+  transition: all 300ms linear;
+}
+
+.toggle-btn label:after{
+  position: relative;
+  content: 'ON';
+  color: #fff;
+  display: none;
+  top: -21px;
+  left: 6px;
+}
+
+.toggle-btn input:checked + label{
+  background: #7477bf;
+}
+
+.toggle-btn input:checked + label:before{
+  left: 45px;
+}
+
+.toggle-btn input:checked + label::after{
+  display:block;
+}
+
+.toggle-btn input{
+  display: none;
+}
+
+.timezones{
+  width: calc(100% - 40px);
+  height: 60px;
+  margin-left: 20px;
+  padding: 10px;
+  background-color: rgb(195, 194, 194);
+  border-radius: 5px;
+  outline: none;
+}
+
+.bottomBtn{
+  display: flex;
+  justify-content: space-around;
+}
+
+.save,
+.cancel{
+  width: 50%;
+  height: 60px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid gray;
+  color: #fff;
+}
+
+.save{
+  background-color: #7477bf;
+}
+
+.cancel{
+  background-color: gray;
+}
 }
