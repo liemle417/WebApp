@@ -55,8 +55,6 @@ let new_dailyTrafficChart = new Chart(dailyTrafficChart, {
     },
 
     options: {
-        responsive: false,
-
         plugins:{
             legend:{
                 display: false

@@ -150,6 +150,11 @@ MARGIN, PADDING 10px*/
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+}
+
+.chartForLine{
+  margin-left: 20px;
 }
 
 .line_chart_events{
@@ -182,9 +187,12 @@ MARGIN, PADDING 10px*/
   margin-bottom: 10px;
 }
 
+.dailyTrafficChart{
+  min-height: 300px;
+}
+
 .mobile_users_pie h2{
   margin-top: 20px;
-  margin-bottom: -30px;
 }
 
 .mobile_users_pie{
@@ -468,7 +476,6 @@ form button{
   }
 
   .chartForLine{
-    margin: 20px;
     width: calc(100% - 130px);
   }
 
@@ -476,8 +483,18 @@ form button{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 200px;
-    width: 100%;
+    height: 250px;
+    width: 90%;
+  }
+
+  .dailyTrafficChart{
+    width: 150px;
+    height: 50px;
+  }
+
+  .dividerOnChart{
+    border-left: 1px solid #aaa;
+    height: 250px;
   }
   
 
