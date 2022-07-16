@@ -188,8 +188,7 @@ MARGIN, PADDING 10px*/
 }
 
 .mobile_users_pie{
-  width: 300px;
-  margin: 0 10px -20px 10px ;
+  min-width: 200px;  
   padding: 0 10px;
 }
 
@@ -454,47 +453,37 @@ form button{
   .line_chart{
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 110px);
   }
-  
+
   .line_chart_events{
     display: flex;
+    justify-content: space-around;
+  }
+ 
+  .line_chart_events p{
+    padding: 10px;
+    margin: 0 10px;
+  }
+
+  .chartForLine{
+    margin: 20px;
+    width: calc(100% - 130px);
+  }
+
+  .bar-doughnut-chart{
+    display: flex;
     justify-content: space-between;
-    padding: 5px;
     align-items: center;
-    align-self: center;
+    min-height: 200px;
+    width: 100%;
   }
   
-  .line_chart_events p{
-    font-weight: bold;
-  }
-
-.active-green{
-  display: inline-block;
-  background-color: #2ECC71;
-  color: #fff;
-  text-align: center;
-  width: 60px;
-  padding: 5px;
-  border-radius: 20px;
-}
-
-.bar_chart{
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.bar_chart h2{
-  margin-bottom: 10px;
-}
-
-.mobile_users_pie h2{
-  margin-top: 20px;
-  margin-bottom: -30px;
-}
 
 .mobile_users_pie{
-  width: 300px;
-  margin: 0 10px -20px 10px ;
+  width: 200px;
+  margin: 0;
   padding: 0 10px;
 }
 

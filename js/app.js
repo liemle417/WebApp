@@ -41,6 +41,7 @@ let dailyTrafficChart = document.getElementById('dailyTrafficChart').getContext(
 let new_dailyTrafficChart = new Chart(dailyTrafficChart, {
     type: 'bar',
     data: {
+        
         labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
         datasets: [{
             data: [75, 110, 155, 125, 225, 200, 100],
@@ -54,13 +55,15 @@ let new_dailyTrafficChart = new Chart(dailyTrafficChart, {
     },
 
     options: {
+        responsive: false,
+
         plugins:{
             legend:{
                 display: false
             }
         },
 
-        //maintainAspectRatio: false
+        maintainAspectRatio: false
     }
 });
 
