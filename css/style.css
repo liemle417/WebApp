@@ -97,12 +97,7 @@ MARGIN, PADDING 10px*/
   padding: 10px; 
 }
 
-.dashboard-search-component h2,
-.line_chart_title,
-.bar_chart_title,
-.mobile_users_pie_title,
-.mobile_users_social_stats_title,
-.member-section h2{
+.sectionTitle{
   font-size: 15px;
 }
 
@@ -214,6 +209,7 @@ MARGIN, PADDING 10px*/
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
   width: 75px;
   height: 75px;
   background-color: #7477bf;
