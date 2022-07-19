@@ -97,19 +97,20 @@ MARGIN, PADDING 10px*/
   padding: 10px; 
 }
 
-.sectionTitle{
-  font-size: 15px;
-}
+
 
 .dashboard-search-component{
   display: flex;
-  width: 100%;
+  width: calc(100% - 20px);
   justify-content: space-between;
   align-items: center;
-  align-self: center;
-  margin: 0 5px;
-  padding: 10px;
+  margin-left: 20px;
+  padding: 10px 0;
   position: relative;
+}
+
+.sectionTitle{
+  font-size: 15px;
 }
 
 .wrap-search-bar{
@@ -123,6 +124,7 @@ MARGIN, PADDING 10px*/
   position: absolute;
   top: 0;
   right: 0;
+
 }
 
 .wrap-search-bar input{
@@ -136,7 +138,6 @@ MARGIN, PADDING 10px*/
 
 .message-notification{
   display: flex;
-  width: calc(100vw - 45px);
   justify-content: space-around;
   align-items: center;
   margin: 15px;
@@ -444,14 +445,7 @@ form button{
     justify-content: flex-end;
     margin: 15px;
   }
-  
-  .wrap-search-bar{
-    width: calc(100vw - 150px);
-  }
-  
-  .wrap-search-bar input{
-    width: calc(100vw - 260px);
-  }
+
 
   .message-notification{
     width: calc(100vw - 130px);
