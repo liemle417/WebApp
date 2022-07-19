@@ -12,9 +12,10 @@ body{
 
 header{
   display: flex;
+  width: 100vw;
   height: 80px;
   font-size: 13px;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-color: #7477bf;
   color: #fff;
@@ -22,12 +23,12 @@ header{
 
 .wrap-top-nav{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin: 0;
 }
 
 header h1{
   font-size: 20px;
-  margin-right: 5px;
   font-weight: 100;
 }
 
@@ -43,9 +44,9 @@ header .divider{
 
 .top-icon{
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  font-size: 15px; 
+  font-size: 15px;
+  margin: 0 5px;
 }
 
 .top-icon img{
@@ -99,7 +100,7 @@ MARGIN, PADDING 10px*/
 
 .dashboard-search-component{
   display: flex;
-  width: calc(100% - 20px);
+  width: calc(100vw - 20px);
   justify-content: space-between;
   align-items: center;
   margin: 0 20px;
@@ -113,7 +114,7 @@ MARGIN, PADDING 10px*/
 
 .wrap-search-bar{
   display: flex;
-  width: 70%;
+  width: 65vw;
   align-items: center;
   border-left: 1px solid gray;
   border-bottom: 1px solid gray;
@@ -188,15 +189,17 @@ MARGIN, PADDING 10px*/
 }
 
 .dailyTrafficChart{
-  min-height: 300px;
+  width: 100%;
+  min-height: 200px;
 }
 
 .mobile_users_pie h2{
   margin-top: 20px;
+  margin-left: 10px;
 }
 
 .mobile_users_pie{
-  min-width: 200px;  
+  min-width: 5px;  
   padding: 0 10px;
 }
 
@@ -418,7 +421,6 @@ form button{
   body{
     display: flex;
     flex-direction: column;
-    width: 100vw;
   }
 
   header{
@@ -459,12 +461,12 @@ form button{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: calc(100vw - 100px);
   }
 
   .line_chart_events{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
   }
  
   .line_chart_events p{
@@ -473,7 +475,7 @@ form button{
   }
 
   .chartForLine{
-    width: calc(100% - 130px);
+    width: calc(100vw - 10%);
   }
 
   .bar-doughnut-chart{
@@ -481,25 +483,13 @@ form button{
     justify-content: space-between;
     align-items: center;
     height: 250px;
-    width: 80%;
-  }
-
-  .dailyTrafficChart{
-    width: 150px;
-    height: 50px;
-  }
+    width: 100vw;
+  } 
 
   .dividerOnChart{
     border-left: 1px solid #aaa;
     height: 250px;
   }
-  
-
-.mobile_users_pie{
-  width: 200px;
-  margin: 0;
-  padding: 0 10px;
-}
 
 .social_stats{
   display: flex;

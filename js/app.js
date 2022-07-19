@@ -80,6 +80,8 @@ let new_mobile_users_pie = new Chart(mobileUsersPie, {
     },
 
     options: {
+        maintainAspectRatio: false,
+
         plugins:{
             legend:{
                 position: 'right',
