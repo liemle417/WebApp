@@ -418,7 +418,7 @@ form button{
   body{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
   }
 
   header{
@@ -447,37 +447,9 @@ form button{
   }
 
   .dashboard-search-component{
-    width: 100%;
+    width: calc(100vw - 100px);
   }
   
-  .sectionTitle{
-    font-size: 15px;
-  }
-  
-  .wrap-search-bar{
-    display: flex;
-    align-items: center;
-    border-left: 1px solid gray;
-    border-bottom: 1px solid gray;
-    height: 40px;
-    background-color: #c1c4f0;
-    outline: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-  
-  }
-  
-  .wrap-search-bar input{
-    border: none;
-    outline: none;
-    margin:  0 10px;
-    padding: 5px;
-    font-size: 13px;
-    border-radius: 5px;
-  }
-
-
   .message-notification{
     width: calc(100vw - 130px);
     justify-content: space-between;
