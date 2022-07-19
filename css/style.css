@@ -15,7 +15,7 @@ header{
   width: 100vw;
   height: 80px;
   font-size: 13px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #7477bf;
   color: #fff;
@@ -23,7 +23,7 @@ header{
 
 .wrap-top-nav{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 header h1{
@@ -41,17 +41,18 @@ header .divider{
   margin: 0 15px;
 }
 
-.top-icon{
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-}
-
 header img{
   align-items: center;
   width: 35px;
   height: 35px;
   border-radius: 50%;
+}
+
+header p{
+  margin-left: 20px;
+  align-items: center;
+  align-self: center;
+  justify-content: space-evenly;
 }
 
 svg[aria-label="Bell-icon"]{
