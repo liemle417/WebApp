@@ -23,16 +23,24 @@ header{
 
 .wrap-top-nav{
   display: flex;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
 header h1{
   font-size: 20px;
   font-weight: 100;
+  margin-left: 20px;
 }
 
 header h1 span{
   font-weight: 900;
+}
+
+.group{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 header .divider{
@@ -41,18 +49,20 @@ header .divider{
   margin: 0 15px;
 }
 
-header img{
+.top-icon{
+  display: flex;
+  justify-content: center;
+}
+
+.top-icon img{
   align-items: center;
   width: 35px;
   height: 35px;
   border-radius: 50%;
 }
 
-header p{
-  margin-left: 20px;
-  align-items: center;
+.top-icon p{
   align-self: center;
-  justify-content: space-evenly;
 }
 
 svg[aria-label="Bell-icon"]{
