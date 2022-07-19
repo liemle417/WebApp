@@ -23,8 +23,7 @@ header{
 
 .wrap-top-nav{
   display: flex;
-  justify-content: center;
-  margin: 0;
+  justify-content: space-between;
 }
 
 header h1{
@@ -46,15 +45,13 @@ header .divider{
   display: flex;
   align-items: center;
   font-size: 15px;
-  margin: 0 5px;
 }
 
-.top-icon img{
+header img{
   align-items: center;
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  margin-right: 10px;
 }
 
 svg[aria-label="Bell-icon"]{
@@ -62,6 +59,12 @@ svg[aria-label="Bell-icon"]{
   height: 25px;
   fill: #fff;
   margin-top: 5px;
+}
+
+.main-div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .main-nav{
@@ -422,7 +425,7 @@ form button{
     display: flex;
     flex-direction: column;
   }
-
+  
   header{
     justify-content: space-between;
   }
@@ -432,7 +435,7 @@ form button{
   }
 
   .main-div{
-    display: flex;
+    flex-direction: row;
   }
 
   .main-nav{
