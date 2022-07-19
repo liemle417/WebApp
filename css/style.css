@@ -97,14 +97,12 @@ MARGIN, PADDING 10px*/
   padding: 10px; 
 }
 
-
-
 .dashboard-search-component{
   display: flex;
   width: calc(100% - 20px);
   justify-content: space-between;
   align-items: center;
-  margin-left: 20px;
+  margin: 0 20px;
   padding: 10px 0;
   position: relative;
 }
@@ -115,6 +113,7 @@ MARGIN, PADDING 10px*/
 
 .wrap-search-bar{
   display: flex;
+  width: 70%;
   align-items: center;
   border-left: 1px solid gray;
   border-bottom: 1px solid gray;
@@ -124,10 +123,10 @@ MARGIN, PADDING 10px*/
   position: absolute;
   top: 0;
   right: 0;
-
 }
 
 .wrap-search-bar input{
+  width: 100%;
   border: none;
   outline: none;
   margin:  0 10px;
@@ -419,6 +418,7 @@ form button{
   body{
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   header{
@@ -444,6 +444,37 @@ form button{
   .wrap-top-nav{
     justify-content: flex-end;
     margin: 15px;
+  }
+
+  .dashboard-search-component{
+    width: 100%;
+  }
+  
+  .sectionTitle{
+    font-size: 15px;
+  }
+  
+  .wrap-search-bar{
+    display: flex;
+    align-items: center;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    height: 40px;
+    background-color: #c1c4f0;
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+  }
+  
+  .wrap-search-bar input{
+    border: none;
+    outline: none;
+    margin:  0 10px;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 5px;
   }
 
 
