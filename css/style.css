@@ -24,7 +24,7 @@ header{
 .wrap-top-nav{
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 header h1{
@@ -51,7 +51,7 @@ header .divider{
 
 .top-icon{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .top-icon img{
