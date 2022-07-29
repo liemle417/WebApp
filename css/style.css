@@ -330,10 +330,16 @@ form button{
 }
 
 /*------------SETTING-------------*/
+
+.settings{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .settings-section{
   display: flex;
   justify-content: space-between;
-  margin: 40px 0;
+  margin: 20px 0;
   align-items: center;
 }
 
@@ -618,13 +624,17 @@ form button{
 }
 
 /*------------SETTING-------------*/
+.settings{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .settings-section{
   display: flex;
   justify-content: space-between;
-  margin: 40px 0;
+  margin: 20px 0;
   align-items: center;
 }
-
 .settings-section p{
   margin: 10px 100px 10px 10px;
   padding-left: 10px;
@@ -632,7 +642,7 @@ form button{
 
 .toggle-btn{
   position: absolute;
-  left: 220px;
+  left: 100%;
 }
 
 .toggle-btn label{
